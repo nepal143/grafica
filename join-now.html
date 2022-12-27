@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+    font-family: 'Airbnb';
+    src: URL('/AirbnbCerealBlack.ttf') format('truetype');
+}
+        body{
+            background-image: linear-gradient(90deg ,rgb(29, 74, 97),rgb(10, 42, 110),rgb(107, 20, 99) );
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-family: Airbnb;
+
+        }
+        header{
+            text-align: center;
+            justify-content: center;
+
+        }
+        button{
+            margin: 4px auto 10px auto;
+            padding: 7px 30px;
+            width: 12em;
+            margin-top: 30px;
+            transition: 0.2s;
+            border: none;
+            border-radius: 2px;
+
+        }
+        button:hover{
+            width: 13em;
+            padding: 9px 30px;
+            background-color: black;
+            color: white;
+        }
+        .HEADING{
+            width: 200px;
+        }
+        /* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container{
+
+            background-color: rgba(255,255,255,0.2);
+            backdrop-filter: blur(4px);
+            padding: 50px ;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+
+            
+
+        }
+        @media screen and (max-width: 800px) {
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+        }
+        input{
+            margin-top: 30px;
+            padding: 10px 30px;
+        }
+@media screen and (max-width:1080px)  {
+    .nav-list{
+        display: none;
+
+    }
+    
+}
+
+.nav a{
+    text-decoration: none;
+}
+.nav a:hover{
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav-list{
+    margin-left: 10vh;
+    margin-top: 10px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.login{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px 30px;
+    transition: .2s;  
+    color: black;
+    background: rgba(255, 255, 255, 0.423);
+    border: none;
+    border-radius: 2px;
+
+}
+.login:hover{
+    color: white;
+    background-color:rgba(134, 32, 32, 0.459);
+
+
+}
+    </style>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="icon" type="image/x-icon" href="data/logo_circle.ico">
+</head>
+<body> 
+    <div class="nav">
+    <ul class="list">
+        <li><img src="data/Png_WeTube.png" style="width: 100px;margin: -50% 0%;" alt=""></li>
+        <a href="about us/index.html"><li class="nav-list">ABOUT</li></a>
+        <a href="buy-subscription.html"><li class="nav-list">BUY SUBSCRIPTION</li></a>
+        <a href="contact us.html"><li class="nav-list">CONTACT US</li></a>
+        <a href="faq.html"><li class="nav-list">FAQ</li></a>
+
+    </ul>
+    <a href="login/login.html"><button class="login">LOGIN</button></a>
+</div>
+    <header>
+            <img src="DATA/Png_WeTube.png" alt="" class="HEADING">
+    <div class="main">
+        <div class="container">
+            <h1>START A PARTY</h1>
+            <input type="text" placeholder="USER NAME">
+            <br>
+            <input type="text" placeholder="CODE">
+            <br>
+            <a href="video player/index.html"><button>
+                CREATE NOW
+            </button></a>
+
+        </div>
+        <div class="container">
+            <h1>JOIN A PARTY       </h1>
+            <input type="text" placeholder="USER NAME">
+            <br>
+            <input type="text" placeholder="CODE">
+            <br>
+            <a href="video player/index.html"><button>
+                JOIN NOW
+            </button></a>
+
+        </div>
+    </div>
+
+
+    </header>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeTube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data/logo_circle.ico">
+    <!-- HTML in your document's head -->
+    <style>
+                .loading-bar{
+            width: 100%;
+            height: 10px;
+            background-color: rgba(45, 255, 45, 0.392);
+        }
+        .main1{
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background-color: black;
+        }
+        .hello1{
+            display: flex;
+            visibility: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.489);
+            height: 10px;
+            padding: 4px;
+            width: 30vw;
+            margin: auto;
+            border-radius: 7px;
+            margin-top:calc(50vh - 100px);
+
+        }
+        .container1{
+            position: absolute;
+            top: 0;
+        }
+        @keyframes loading{
+        0%{
+        background-color: rgba(255, 0, 0,0.5);
+
+        }
+        25%{
+    background-color: rgba(253, 165, 2,0.5);
+
+        }
+        50%{
+   background-color: rgba(0, 0, 254, 0.542);
+        }
+        75%{
+    background-color: rgba(0, 154, 0, 0.456);
+
+        }
+        100%{
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+    }
+    @keyframes loading1{
+        0%{
+            color: rgba(253, 165, 2,0.5);
+            
+        }
+        25%{
+            color: rgba(255, 0, 0,0.5);
+
+        }
+        50%{
+            color: rgba(0, 154, 0, 0.456);
+        }
+        75%{
+            color: rgba(0, 0, 254, 0.542);
+
+        }
+        100%{
+            color: rgba(255, 0, 0, 0.5);
+        }
+    }
+    .login{
+        animation: loading 4s infinite;
+    }
+    .join-now{
+        animation: loading 4s infinite;
+        
+    }
+    h1{
+        animation: loading1 4s infinite;
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="background">
+    <video src="data/main-background.mp4" autoplay loop muted></video></div>
+    <header>
+        <div class="nav">
+            <ul class="list">
+                <li><img src="data/Png_WeTube.png" style="width: 100px;margin: -50% 0%;" alt=""></li>
+                <a href="about us/index.html"><li class="nav-list">ABOUT</li></a>
+                <a href="buy-subscription.html"><li class="nav-list">BUY SUBSCRIPTION</li></a>
+                <a href="contact us.html"><li class="nav-list">CONTACT US</li></a>
+                <a href="faq.html"><li class="nav-list">FAQ</li></a>
+
+            </ul>
+            <a href="login/login.html"><button class="login">LOGIN</button></a>
+        </div>
+    </header>
+    <div class="main1">
+
+        <div class="hello1">
+
+            <div class="loading-bar">
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <main>
+        <h1>WeTube</h1>
+        <p>Worlds most trusted entertainment site with 10M WeTubers</p>
+        <a class="join-now" href="join-now.html">JOIN NOW</a>
+    </main>
+    <footer style=" display: flex; justify-content: center;">
+        <p style="position: absolute; bottom: 0; ">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+    </footer>
+</body>
+
+</html>

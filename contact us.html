@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        *{
+            font-family: Airbnb;
+            margin: 0;
+            color: white;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+        img{
+            width: 150px;
+            border-radius: 50%;
+            border: 1px solid black;
+
+        }
+        .heading{
+            text-align: center;
+            font-size: 4em;
+            text-shadow: 4px 4px rgba(0,0,0,.4);
+        }
+        .container{
+
+            margin: 30px;
+            border-radius: 20px;
+            padding: 10px;
+            border: solid white 1px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            background-color: (255,255,255.4);
+            box-shadow:10px 15px rgba(255,255,255,0.4);
+            backdrop-filter: blur(4px);
+            
+        }
+        .container p{
+            /* margin-right: 20px; */
+            margin-top: 10px;
+            color: white;
+            margin-left: 20px;
+        }
+        @media screen and (max-width:650px) {
+            .container{
+                width: fit-content;
+            }
+        }
+        /* CSS */
+        @font-face {
+    font-family: 'Airbnb';
+    src: URL('AirbnbCerealBlack.ttf') format('truetype');
+}
+.background{
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    transition: 2s;
+    height: 10000px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+
+}
+
+.nav-list{
+    margin-left: 10vh;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.nav a:hover{
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+
+
+.login{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px 30px;
+    transition: .2s;  
+    color: black;
+    background: rgba(255, 255, 255, 0.423);
+    border: none;
+    border-radius: 2px;
+
+}
+.login:hover{
+    color: white;
+    background-color:rgba(134, 32, 32, 0.459);
+
+
+}
+
+
+    </style>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" type="image/x-icon" href="data/logo_circle.ico">
+</head>
+<body>
+    <div class="nav">
+        <ul class="list">
+            <li><img src="data/Png_WeTube.png" style="width: 100px;margin: -50% 0%;" alt=""></li>
+            <a href="about us/index.html"><li class="nav-list">ABOUT</li></a>
+            <a href="buy-subscription.html"><li class="nav-list">BUY SUBSCRIPTION</li></a>
+            <a href="contact us.html"><li class="nav-list">CONTACT US</li></a>
+            <a href="faq.html"><li class="nav-list">FAQ</li></a>
+    
+        </ul>
+        <a href="login/login.html"><button class="login">LOGIN</button></a>
+    </div>
+    <div class="background">
+        <video src="data/main-background.mp4" autoplay loop muted></video></div>
+    
+    <div class="heading">CONTACT US </div>
+    <header>
+        <div class="container">
+            <img src="data/vignesh.jpeg" alt="image of vignesh">
+            <div class="info">
+            <P ><strong>NAME    :</strong> VIGNESH PANDI</P>
+            <p><strong>EMAIL    :</strong>vignesh080903@gmail.com</p>
+            <p><strong>GIT-HUB  :</strong>github.com/wigglevig</p>
+            <p><strong>PHONE :</strong>9354187914</p>
+        </div>
+        </div>
+        <div class="container">
+            <img src="data/nepal2.jpg" alt="image of vignesh">
+            <div class="info">
+            <P ><strong>NAME    :</strong> NEPAL SINGH</P>
+            <p><strong>EMAIL    :</strong>nepalsss007@gmail.com</p>
+            <p><strong>GIT-HUB  :</strong>github.com/nepal143</p>
+            <p><strong>PHONE :</strong>9381534195</p>
+        </div>
+        </div>
+        <div class="container">
+            <img src="data/myimg.jpg" alt="image of vignesh">
+            <div class="info">
+            <P ><strong>NAME    :</strong> KUNAL SINGH</P>
+            <p><strong>EMAIL    :</strong>kunalsingh@gmail.com</p>
+            <p><strong>GIT-HUB  :</strong>github.com/kunal763</p>
+            <p><strong>PHONE :</strong>78569 02017</p>
+        </div>
+        </div>
+        <div class="container">
+            <img src="data/jatin.jpeg" alt="image of vignesh">
+            <div class="info">
+            <P ><strong>NAME    :</strong> JATIN PANDEY</P>
+            <p><strong>EMAIL    :</strong>jatinpandey007@gmail.com</p>
+            <p><strong>GIT-HUB  :</strong>github.com/jt-pandey</p>
+            <p><strong>PHONE :</strong>87360 22102</p>
+        </div>
+        </div>
+
+    </header>
+</body>
+</html>
